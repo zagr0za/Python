@@ -1,9 +1,13 @@
 from random import randint
 
 
-def random_list():
-    a = [randint(0, 7) for i in range(7)]
-    print(a)
+def random_list(a, b, c):
+    w = [randint(a, b) for i in range(c)]
+    print(w)
 
 
-random_list()
+x = int(input("Введіть значення початку діапазону: "))
+y = int(input("Введіть значення кінця діапазону: "))
+z = int(input("Введіть кількість елементів у списку, що генерується: "))
+
+random_list(int(x), int(y), int(z))
